@@ -1,0 +1,6 @@
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\bin\Debug\AlgoImpl.exe.config
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\obj\Debug\AlgoImpl.csprojResolveAssemblyReference.cache
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\bin\Debug\AlgoImpl.exe
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\bin\Debug\AlgoImpl.pdb
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\obj\Debug\AlgoImpl.exe
+F:\Skydrive\Code\AlgoImpl\AlgoImpl\obj\Debug\AlgoImpl.pdb

@@ -1,0 +1,10 @@
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\bin\Debug\AlgoProject1.exe
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\bin\Debug\AlgoProject1.exe.config
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\bin\Debug\AlgoProject1.exe.manifest
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\bin\Debug\AlgoProject1.application
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\obj\Debug\AlgoProject1.csprojResolveAssemblyReference.cache
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\obj\Debug\AlgoProject1.exe.manifest
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\obj\Debug\AlgoProject1.application
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\obj\Debug\AlgoProject1.exe
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\obj\Debug\AlgoProject1.pdb
+F:\Skydrive\Code\AlgoProject1\AlgoProject1\bin\Debug\AlgoProject1.pdb

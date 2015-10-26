@@ -1,0 +1,6 @@
+F:\Skydrive\Code\Project2\Project2\bin\Debug\Project2.exe.config
+F:\Skydrive\Code\Project2\Project2\bin\Debug\Project2.exe
+F:\Skydrive\Code\Project2\Project2\obj\Debug\Project2.pdb
+F:\Skydrive\Code\Project2\Project2\bin\Debug\Project2.pdb
+F:\Skydrive\Code\Project2\Project2\obj\Debug\Project2.exe
+F:\Skydrive\Code\Project2\Project2\obj\Debug\Project2.csprojResolveAssemblyReference.cache

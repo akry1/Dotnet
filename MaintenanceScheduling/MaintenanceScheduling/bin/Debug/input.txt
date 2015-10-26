@@ -1,0 +1,3 @@
+capacity :  5, 5, 5, 5
+maxPerInterval :  2, 2, 2, 2,2
+intervalsLeft : 2, 2,2,2,2

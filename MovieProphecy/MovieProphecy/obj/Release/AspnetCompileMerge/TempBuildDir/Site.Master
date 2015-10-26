@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MovieProphecy.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> Movie Prophecy</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />  
+
+</head>
+<body>
+    <form runat="server">        
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />                               
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>           
+        </asp:ScriptManager>
+         
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" style="margin-left :-4%">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                       <!-- <li><a runat="server" href="~/Contact">Contact</a></li> -->
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content"> 
+        <div class="main-title" style ="margin-left:2%">
+            <p runat="server">MovieProphecy</p>
+        </div>
+            
+
+            <table ID="Table1" style="width :100%;height :500px;">
+            <tr class ="tablerow">
+                <td class="tablecol1" style ="white-space :nowrap">
+                           <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                        <ContentTemplate>
+                    <ul class="list-group">
+                        <li class="list-group-item active">Upcoming</li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnUpcomingMovie1" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnUpcomingMovie2" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnUpcomingMovie3" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnUpcomingMovie4" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnUpcomingMovie5" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                       
+                    </ul>
+                    <br />
+                    <br />
+                    <ul class="list-group">
+                        <li class="list-group-item active">Recent</li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnRecentMovie1" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnRecentMovie2" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnRecentMovie3" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnRecentMovie4" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                        <li class="list-group-item"><asp:LinkButton ID="lnkBtnRecentMovie5" runat="server" OnClick="lnkBtnMovie_Click"></asp:LinkButton></li>
+                    </ul>
+
+                    </ContentTemplate>
+                    </asp:UpdatePanel> 
+                </td>
+                <td class="tablecol2" rowspan ="2">
+                        <div class="content-center">
+                                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                            <ContentTemplate>
+                            <asp:DropDownList CssClass ="btn btn-default" ID="ddlMovieList" runat="server" Width="300px" Font-Size="12pt" Height="34px" Visible="false" >                                
+                            </asp:DropDownList>  
+                            <asp:TextBox ID="txtMovieName" runat="server" Width="300px" Font-Size="12pt" Height="34px"></asp:TextBox>                  
+                            <asp:Button CssClass ="btn btn-default" ID="btnGo" runat="server" Text="Go" OnClick="btnGo_Click" />
+                        
+                       </ContentTemplate>
+                        </asp:UpdatePanel> 
+                            <br />
+                            <asp:Panel ID="pnlList" runat="server">
+                            </asp:Panel>
+                        </div>
+                    <div class="content-center">
+                        <br />
+                        <asp:UpdateProgress ID="updProgress" AssociatedUpdatePanelID="UpdatePanel1" runat="server">
+                        <ProgressTemplate>           
+                        <img alt="progress" src="/Content/progress.gif"/>
+                         <b>Gathering Tweets...</b>         
+                        </ProgressTemplate>
+                         </asp:UpdateProgress>
+                        <asp:UpdateProgress ID="UpdateProgress1" AssociatedUpdatePanelID="UpdatePanel2" runat="server">
+                        <ProgressTemplate>           
+                        <img alt="progress" src="/Content/progress.gif"/>
+                         <b>Gathering Tweets...</b>         
+                        </ProgressTemplate>
+                         </asp:UpdateProgress>
+                        </div>
+                    <br />
+                    <div class="content-center">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div> 
+                </td>
+            </tr>
+            <tr class="tablerow" >
+                <td class="tablecol1">
+                    
+                </td>
+            </tr>
+        </table>
+    
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Movie Prophecy</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
